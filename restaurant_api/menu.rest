@@ -1,0 +1,25 @@
+###
+POST http://localhost:9000/api/add-menu
+Content-Type: application/json
+
+{
+    "name_menu" : "Mie Goreng Paris",
+    "price" : 20000
+}
+
+###
+GET http://localhost:9000/api/menus
+
+### get menu by id
+GET http://localhost:9000/api/menu/6472fbd53160b7e4f6165941
+
+
+###
+POST http://localhost:9000/api/menu/order
+Content-Type: application/json
+
+{
+    "name_menu" : "Mie Goreng Paris",
+    "price" : 20000,
+    "quantity" : 3
+}

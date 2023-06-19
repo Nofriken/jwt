@@ -1,0 +1,12 @@
+import mongoose from "mongoose";
+
+export const db_url = () => {
+  mongoose.connect(process.env.DB_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+
+  const db = mongoose.connection;
+  db.on("err", (err) => console.info(err));
+  db.once("open", () => console.info("Database is connect"));
+};

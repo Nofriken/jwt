@@ -1,0 +1,15 @@
+###
+POST http://localhost:5000/api/user/create-note 
+Content-Type: application/json
+Authorization: Bearer
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbnRhcGppd2FAZ21haWwuY29tIiwiaWF0IjoxNjg2MDM2MDQxLCJleHAiOjE2ODYwMzYwNzF9.Wa73w5fpESGhR9HADXnIP5CJFmS1LYU_6RYxf2EIlks
+
+{
+    "title" : "My Long Journey",
+    "author" : "Nofri",
+    "note" : "my long journey is my adventure that i will remember forever"
+}
+
+###
+GET http://localhost:5000/api/user/read-note 
+Authorization: Bearer
